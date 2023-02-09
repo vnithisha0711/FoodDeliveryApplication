@@ -1,0 +1,17 @@
+<ul>
+    <li *ngFor="let rest of Restaurants">
+        <img src="{{rest.imageUrl}}" alt="rest images">
+        <div class="content">
+            <div class="name">
+                {{rest.name}}
+            </div>
+        </div>
+        <div class="address">
+            <span *ngFor="let address of rest.address"></span>
+            {{rest.address}}
+        </div>
+        <div>
+        <a class="btn" routerLink="/food-items-list">View Menu</a>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,25 @@
+<h2> Payment Details </h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th> PaymentId</th>
+            <th> PaymentDate</th>
+            <th> PaymentType</th>
+            <th> PaymentStatus</th>
+            <th> Action </th>
+            <!-- <th> CartId</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let payment of payments">
+            <td> {{ payment.paymentId }} </td>
+            <td> {{ payment.paymentDate }} </td>
+            <td> {{ payment.paymentType }} </td>
+            <td> {{ payment.paymentStatus}} </td>
+            <!-- <td> {{ payment.cartId }} </td> -->
+            <td>
+            <button (click)="deletePayment(payment)" class="btn btn-danger" style="margin-left:10px">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

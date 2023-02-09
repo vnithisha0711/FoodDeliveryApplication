@@ -1,0 +1,36 @@
+<h2>Cart Details</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+           <!-- <th>restaurantId</th>
+            <th>customerId</th> -->
+            
+            <!-- <th>foodId</th> -->
+            <th>foodItems</th>
+            <th>quantity</th>
+            <th>price</th>
+            
+            <th>Actions</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let cart of carts">
+            <!-- <td>{{cart.restaurantId}}</td>
+            <td>{{cart.customerId}}</td> -->
+            
+            <td>{{cart.foodItems}}</td>
+            <td>{{cart.quantity}}</td>
+            <td>{{cart.price}}</td>
+            
+
+            <td>
+                <button (click)="updateCart(cart)" data-bs-target="#updateCart" class="btn btn-info" >Update</button>
+                <button (click)="deleteCart(cart)" class="btn btn-danger" style="margin-left:10px">Delete</button> 
+                <!-- <button (click)="cartDetails()" class="btn btn-info" style="margin-left:10px">View</button> -->
+            </td>
+            
+            <!-- <td>{{cart.foodId}}</td> -->
+        </tr>
+    </tbody>
+</table>

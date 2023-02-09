@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3">
+<h3> Create Payment</h3>
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>PaymentId</label>
+        <input type="text" class="form-control" id="paymentId"
+            [(ngModel)]="payment.paymentId" name="paymentId">
+    </div>
+
+    <div class="form-group">
+        <label>PaymentDate</label>
+        <input type="text" class="form-control" id="paymentDate"
+            [(ngModel)]="payment.paymentDate" name="paymentDate">
+    </div>
+    <div class="form-group">
+        <label>PaymentType</label>
+        <input type="text" class="form-control" id="paymentType"
+            [(ngModel)]="payment.paymentType" name="paymentType">
+    </div>
+    <div class="form-group">
+        <label>PaymentStatus</label>
+        <input type="text" class="form-control" id="paymentStatus"
+            [(ngModel)]="payment.paymentStatus" name="paymentStatus">
+    </div>
+    <div class="form-group">
+        <label>CartId</label>
+        <input type="hidden" class="form-control" id="cartId"
+            [(ngModel)]="payment.cartId" name="cartId">
+    </div>
+
+    <button class="btn btn-success" type="submit"> Submit</button>
+
+</form>
+</div>

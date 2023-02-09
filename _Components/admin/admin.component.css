@@ -1,0 +1,119 @@
+.h1{
+
+    position:relative;
+
+    text-align:center;
+
+    top: 10px;
+
+    color:black;
+
+    font-family:'Times New Roman';
+
+    size: larger;
+
+}
+
+.navbar {
+
+    overflow:hidden;
+
+    height:120px;
+
+    background-color:rgb(202, 172, 94);
+
+    }
+
+    .navbar a{
+
+    float: left;
+
+    font-size: 20px;
+
+    color:black;
+
+    text-align: center;
+
+    padding: 12px;
+
+    text-decoration: none;
+
+    }
+
+    .home{
+
+    position:relative;
+
+    left: 520px;
+
+    color:black;
+
+    font-family:'Times New Roman';
+
+    size: larger;
+
+    }
+
+    .log{
+
+        position: relative;
+
+        left: 700px;
+
+        color:black;
+
+        size: larger;
+
+        font-family:'Times New Roman';
+
+    }
+
+    .fl{
+
+        position: relative;
+
+        left: 18px;
+
+        font-size: 20px;
+
+        color:black;
+
+        size: larger;
+
+        font-family:'Times New Roman';
+
+    }
+
+    .sl{
+
+        position: relative;
+
+        left: 30px;
+
+        font-size: 20px;
+
+        color:black;
+
+        size: larger;
+
+        font-family:'Times New Roman';
+
+    }
+
+    .cl{
+
+        position: relative;
+
+        left: 40px;
+
+        font-size: 20px;
+
+        color:black;
+
+        size: larger;
+
+        font-family:'Times New Roman';
+
+    }
+
+
